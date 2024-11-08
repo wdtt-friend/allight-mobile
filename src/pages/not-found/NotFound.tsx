@@ -1,12 +1,12 @@
-import styles from './NotFound.module.scss';
+import { Box, Typography } from "@mui/material";
 
 const NotFound = () => {
     return (
         <>
-            <div>
-                <h1 className={styles.title}>404 Not Found</h1>
-                <p>페이지를 찾을 수 없습니다.</p>
-            </div>
+            <Box>
+                <Typography variant="h1">404 Not Found</Typography>
+                <Typography>페이지를 찾을 수 없습니다.</Typography>
+            </Box>
         </>
     );
 }
