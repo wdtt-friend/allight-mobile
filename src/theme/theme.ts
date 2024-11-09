@@ -61,7 +61,7 @@ const theme = createTheme({
                     maxWidth: '600px',
                     borderRadius: '12px 12px 0 0',
                     boxShadow: 'none',
-                    padding: '24px 16px',
+                    padding: '24px 16px 16px',
                     backgroundColor: '#fff',
                 },
                 root: {
