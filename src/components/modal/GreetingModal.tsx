@@ -1,27 +1,21 @@
 import { useState } from "react";
-import { Dialog, Box, Button, Typography } from "@mui/material";
-import 'swiper/css';
-import 'swiper/css/pagination';
-import styles from "./LandingModal.module.scss";
+import { Box, Button, Typography } from "@mui/material";
+import styles from "./GreetingModal.module.scss";
+import FullLayerModal from "../../components/common/modal/FullLayerModal";
 
-const LandingModal = () => {
+const GreetingModal = () => {
     const [open, setOpen] = useState(true);
 
     const handleClose = () => setOpen(false);
 
     return (
-        <Dialog
+        <FullLayerModal
             open={open}
             onClose={handleClose}
-            transitionDuration={0}
-            fullScreen
         >
             <Box className={styles.dialogBody}>
-                {/* TODO: Swiper Start */}
                 <Box className={styles.carousel}>
-                    <Box className={styles.carouselImg}>
-                        슬라이드 이미지다.
-                    </Box>
+                    <Box className={styles.carouselImg}>슬라이드 이미지다.</Box>
                     <Box className={styles.carouselText}>
                         <Typography variant="h3" className={styles.title}>
                             슬라이드 타이틀이다.
@@ -32,15 +26,14 @@ const LandingModal = () => {
                         </Typography>
                     </Box>
                 </Box>
-                {/* TODO: Swiper End */}
             </Box>
             <Box className={styles.dialogFooter}>
                 <Button className={styles.btnGoHome} variant="contained" onClick={handleClose}>
                     Get Started
                 </Button>
             </Box>
-        </Dialog>
+        </FullLayerModal>
     );
-}
+};
 
-export default LandingModal;
+export default GreetingModal;
