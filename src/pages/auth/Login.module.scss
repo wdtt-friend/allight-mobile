@@ -1,0 +1,106 @@
+.login-bg {
+  height: 100vh;
+  background: #D8B59F;
+
+  .img-wrap {
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+
+    img {
+      aspect-ratio: 440/534;
+    }
+  }
+}
+
+.login-bottom-sheet {
+  min-height: 48%;
+
+  .text-area {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    h3 {
+      color: #1A1C29;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-align: center;
+    }
+
+    p {
+      color: #797979;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+    }
+  }
+
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 12px 0;
+
+    .btn-auth {
+      display: flex;
+      padding: 10px 16px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      align-self: stretch;
+      border-radius: 12px;
+      border: 1px solid #D7D7D7;
+
+      .MuiButton-icon {
+        margin: 0;
+      }
+
+      .btn-icon {
+        width: 20px;
+        height: 20px;
+        display: flex;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .btn-name {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.terms-notice {
+  padding: 0 10px;
+  margin-top: auto;
+
+  p {
+    color: #797979;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+
+    span {
+      font-size: 12px;
+      text-decoration-line: underline;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .login-bg {
+    .img-wrap {
+      height: 54%;
+    }
+  }
+}
